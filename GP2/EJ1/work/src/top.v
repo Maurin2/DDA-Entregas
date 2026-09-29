@@ -1,6 +1,6 @@
 
 // IMPORTANTE: el codigo usa MSB de mantisa explicita. es decir, la mantisa es el numero completo, no hay un 1 implicito como recomienda la IEEE
-module top
+module top_multiplicador_fp
 #(
     parameter MANTISA_LEN = 8,
     parameter EXPONENTE_LEN = 4

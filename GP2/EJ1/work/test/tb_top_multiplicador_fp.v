@@ -1,12 +1,12 @@
 `timescale 1ns/1ps
-module tb_top;
+module tb_top_multiplicador_fp;
     reg  [12:0] a, b;
     wire [12:0] y;
     wire        ovf;
     integer     errores = 0;
     integer     casos_probados = 0;
 
-    top dut (
+    top_multiplicador_fp dut (
         .i_a(a),
         .i_b(b),
         .o_y(y),

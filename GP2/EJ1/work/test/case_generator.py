@@ -13,7 +13,7 @@ def encode(r):
     """float -> (s, m, e, ovf)"""
     s = 1 if r < 0 else 0       # Signo
     M, E = math.frexp(abs(r))   # Descompone en mantisa y exponente
-    M, E = 2 * M, E - 1         # lo paso a f en [1, 2)
+    M, E = 2 * M, E - 1         # Por como devuelve la mantisa, hay que desplazar a la izq. 
     e = E + BIAS
     if e < 0 or e > 15:         # Overflow
         return s, 0, 0, 1       # devuelvo un overflow = true, no importa el resto asi qeu devuelvo 0
