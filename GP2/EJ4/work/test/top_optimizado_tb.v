@@ -1,6 +1,6 @@
 `timescale 1ns/100ps
 
-module top_tb;
+module top_optimizado_tb;
 
     // ---------------- Parametros del DUT ---------------- //
     localparam NB_INPUT   = 16;
@@ -24,11 +24,11 @@ module top_tb;
     reg         [N_TAPS*NB_INPUT-1:0] i_h;
     wire signed [NB_OUTPUT-1:0]       o_y_n;
 
-    top #(
+    top_optimizado #(
         .NB_INPUT  (NB_INPUT),
         .NBF_INPUT (NBF_INPUT),
         .N_TAPS    (N_TAPS)
-    ) u_top (
+    ) u_top_optimizado (
         .clk   (clk),
         .reset (reset),
         .i_x_n (i_x_n),
