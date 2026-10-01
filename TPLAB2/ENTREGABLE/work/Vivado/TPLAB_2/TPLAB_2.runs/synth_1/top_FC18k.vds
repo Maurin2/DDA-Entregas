@@ -1,0 +1,319 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Oct  1 17:35:51 2026
+# Process ID         : 426945
+# Current directory  : /mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.runs/synth_1
+# Command line       : vivado -log top_FC18k.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_FC18k.tcl
+# Log file           : /mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.runs/synth_1/top_FC18k.vds
+# Journal file       : /mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.runs/synth_1/vivado.jou
+# Running On         : alumno-A520M-HDV
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 26.04.1 LTS
+# Processor Detail   : AMD Ryzen 7 5700
+# CPU Frequency      : 4469.399 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16088 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20383 MB
+# Available Virtual  : 8396 MB
+#-----------------------------------------------------------
+source top_FC18k.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_FC18k -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 427058
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1946.273 ; gain = 419.828 ; free physical = 1208 ; free virtual = 6962
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_FC18k' [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/top_FC18k.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/top_FC18k.v:39]
+INFO: [Synth 8-6157] synthesizing module 'top' [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.runs/synth_1/.Xil/Vivado-426945-alumno-A520M-HDV/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.runs/synth_1/.Xil/Vivado-426945-alumno-A520M-HDV/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'signal_generator' [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/signal_generator.v:1]
+INFO: [Synth 8-3876] $readmem data file 'mem.hex' is read successfully [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/signal_generator.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'signal_generator' (0#1) [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/signal_generator.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fir_filter' [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/fir_filter.v:1]
+	Parameter NB_INPUT bound to: 8 - type: integer 
+	Parameter NBF_INPUT bound to: 6 - type: integer 
+	Parameter N_TAPS bound to: 15 - type: integer 
+	Parameter NB_OUTPUT bound to: 12 - type: integer 
+	Parameter NBF_OUTPUT bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multiplicador' [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/multiplicador.v:1]
+	Parameter NB_INPUT bound to: 8 - type: integer 
+	Parameter NBF_INPUT bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'multiplicador' (0#1) [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/multiplicador.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fir_filter' (0#1) [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/fir_filter.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/top.v:54]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.runs/synth_1/.Xil/Vivado-426945-alumno-A520M-HDV/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.runs/synth_1/.Xil/Vivado-426945-alumno-A520M-HDV/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.runs/synth_1/.Xil/Vivado-426945-alumno-A520M-HDV/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (0#1) [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.runs/synth_1/.Xil/Vivado-426945-alumno-A520M-HDV/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/top.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_FC18k' (0#1) [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/top_FC18k.v:1]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_vio0'. This will prevent further optimization [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/top.v:61]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_fir_filter'. This will prevent further optimization [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/top.v:43]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_signal_generator'. This will prevent further optimization [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/top.v:26]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ila0'. This will prevent further optimization [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/src/libs/top.v:54]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2022.242 ; gain = 495.797 ; free physical = 1140 ; free virtual = 6896
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2034.117 ; gain = 507.672 ; free physical = 1140 ; free virtual = 6895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2034.117 ; gain = 507.672 ; free physical = 1140 ; free virtual = 6895
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2034.117 ; gain = 0.000 ; free physical = 1139 ; free virtual = 6895
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_top/u_ila0'
+Finished Parsing XDC File [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_top/u_ila0'
+Parsing XDC File [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.gen/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'u_top/u_vio0'
+Finished Parsing XDC File [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.gen/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'u_top/u_vio0'
+Parsing XDC File [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_top/u_clk'
+Finished Parsing XDC File [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_top/u_clk'
+Parsing XDC File [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/constraints/pynq_z2.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'sys_clk' completely overrides clock 'clk'.
+New: create_clock -period 8.000 -name sys_clk [get_ports clk], [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/constraints/pynq_z2.xdc:3]
+Previous: create_clock -period 8.000 [get_ports clk], [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+Finished Parsing XDC File [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/constraints/pynq_z2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/constraints/pynq_z2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_FC18k_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_FC18k_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2162.859 ; gain = 0.000 ; free physical = 1139 ; free virtual = 6895
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2162.859 ; gain = 0.000 ; free physical = 1139 ; free virtual = 6895
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2162.859 ; gain = 636.414 ; free physical = 1064 ; free virtual = 6822
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2170.863 ; gain = 644.418 ; free physical = 1067 ; free virtual = 6828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for u_top/u_ila0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_top/u_vio0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_top/u_clk. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2170.863 ; gain = 644.418 ; free physical = 1068 ; free virtual = 6829
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint /mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.srcs/utils_1/imports/synth_1/top.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2170.863 ; gain = 644.418 ; free physical = 1061 ; free virtual = 6822
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2170.863 ; gain = 644.418 ; free physical = 1061 ; free virtual = 6822
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2170.863 ; gain = 644.418 ; free physical = 1059 ; free virtual = 6818
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  15 Input   12 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2170.863 ; gain = 644.418 ; free physical = 1100 ; free virtual = 6863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|signal_generator | data       | 1024x8        | LUT            | 
+|signal_generator | p_0_out    | 1024x8        | LUT            | 
++-----------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2211.863 ; gain = 685.418 ; free physical = 994 ; free virtual = 6756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2240.910 ; gain = 714.465 ; free physical = 967 ; free virtual = 6729
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2240.910 ; gain = 714.465 ; free physical = 947 ; free virtual = 6710
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2384.723 ; gain = 858.277 ; free physical = 828 ; free virtual = 6590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2384.723 ; gain = 858.277 ; free physical = 828 ; free virtual = 6590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2384.723 ; gain = 858.277 ; free physical = 823 ; free virtual = 6584
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2384.723 ; gain = 858.277 ; free physical = 823 ; free virtual = 6584
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2384.723 ; gain = 858.277 ; free physical = 823 ; free virtual = 6584
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2384.723 ; gain = 858.277 ; free physical = 823 ; free virtual = 6584
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |ila_0         |         1|
+|3     |vio_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |ila     |     1|
+|3     |vio     |     1|
+|4     |CARRY4  |   261|
+|5     |LUT1    |     1|
+|6     |LUT2    |   274|
+|7     |LUT3    |   309|
+|8     |LUT4    |   515|
+|9     |LUT5    |    85|
+|10    |LUT6    |   456|
+|11    |MUXF7   |    12|
+|12    |MUXF8   |     6|
+|13    |FDCE    |   132|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2384.723 ; gain = 858.277 ; free physical = 830 ; free virtual = 6592
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2384.723 ; gain = 729.535 ; free physical = 830 ; free virtual = 6592
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2384.730 ; gain = 858.277 ; free physical = 830 ; free virtual = 6592
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2384.730 ; gain = 0.000 ; free physical = 903 ; free virtual = 6665
+INFO: [Netlist 29-17] Analyzing 279 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2440.750 ; gain = 0.000 ; free physical = 910 ; free virtual = 6673
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: a55b7641
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 3 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 2440.750 ; gain = 1035.816 ; free physical = 914 ; free virtual = 6677
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1599.714; main = 1599.714; forked = 264.648
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3080.602; main = 2440.754; forked = 917.738
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2464.762 ; gain = 0.000 ; free physical = 905 ; free virtual = 6668
+INFO: [Common 17-1381] The checkpoint '/mnt/linuxdata/UTN/DDA/DDA-Entregas/TPLAB2/ENTREGABLE/work/Vivado/TPLAB_2/TPLAB_2.runs/synth_1/top_FC18k.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_FC18k_utilization_synth.rpt -pb top_FC18k_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  1 17:36:19 2026...
